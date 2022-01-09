@@ -45,6 +45,7 @@ func init() {
 	if err == nil && u.Name != "" && u.Name != u.Username {
 		userAndHostname += " (" + u.Name + ")"
 	}
+	userAndHostname = "mkcert@self-signed.local"
 }
 
 func (m *mkcert) makeCert(hosts []string) {
